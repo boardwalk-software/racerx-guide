@@ -31,17 +31,19 @@ In *Beta-1*:
 
 ## Why *RacerX* is different
 
-Most business software lives in a data center. The application runs on the vendor's servers, your data sits in the vendor's database, and every computer and phone is only a window onto it. When those servers are slow or down, so is your work; when you stop paying, or the vendor closes, your data goes with them.
+Most business software lives in a data center. The application runs on the vendor's servers, your data sits in the vendor's database, and every computer and phone is only a window onto it. When those servers are slow or down, so is your work; when you stop paying, or the vendor closes, your data goes with them. And every new service like that needs more data center capacity, with the power, water, land and noise that come with it, which more and more communities are pushing back against.
 
-*RacerX* turns that around. **The application server and the database server move onto your own devices.** Every computer and phone runs the whole application, with its own copy of each app's database, so it's fast and keeps working offline. All that's left in a data center is your data's files, in cloud storage you already have (Dropbox, OneDrive or iCloud Drive) or on a network share in your own office. That storage just holds the files and carries changes between devices. *RacerX* runs no servers of its own, so its data center footprint is small: ordinary file storage, which you control.
+*RacerX* turns that around. **The application server and the database server move onto your own devices.** Every computer and phone runs the whole application, with its own copy of each app's database, so it's fast and keeps working offline. It puts to work the computing power you already own, on your desk and in your pocket, instead of asking for more in a data center. All that's left in a data center is your data's files, in cloud storage you already have (Dropbox, OneDrive or iCloud Drive) or on a network share in your own office. That storage just holds the files and carries changes between devices. *RacerX* runs no servers of its own, so its data center footprint is small: ordinary file storage, which you control.
 
 What that means for you:
 
-- **Your data stays yours**, in storage you choose and already pay for, or on this device only.
+- **Your data stays yours**, in storage you choose, or on this device only. The free plan from Dropbox, OneDrive or iCloud Drive is enough to get started.
 - **Fast, and works offline.** Every list, search and report runs on your own device. Changes sync when you're back online.
 - **Multi-user apps.** Share an app with other people as Read-Write or Read-Only members; everyone's devices stay in step through the shared storage.
 - **Every major device:** Mac, Windows and Linux computers, and mobile (iPhone/iPad and Android).
 - **No servers to set up or pay for**, and no IT department needed.
+- **AI is optional.** *RacerX* works fully without it. If you want AI to help design apps or write queries, you bring your own key from an AI provider (Claude, OpenAI or Gemini), and *RacerX* guides you through getting one, on a free or a paid plan.
+- **You decide how far to go.** Start free, on one device, with one simple app. Add cloud storage, more people, more apps or AI when you want them: how complex or expensive it gets is up to you.
 
 ## What *RacerX* does
 
