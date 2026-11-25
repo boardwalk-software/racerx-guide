@@ -74,7 +74,14 @@ Every app on your devices has a local copy in a small database on each device. E
 
 **How often apps check for changes.** By default an app checks every 5 minutes while *RacerX* is in front (every 10 minutes for OneDrive), and also when you come back to *RacerX* from a different application on your device. While *RacerX* is in the background it doesn't check, unless the app's owner turned that on. Owners can change both in the Schema Editor (**⚙️ Settings → Check for changes**). You can force *RacerX* to instantly check the cloud storage for changes via the **Sync** button in the Sync Dashboard.
 
-**If two people change the same record**, the most recent save wins.
+**If several people edit the same record at about the same time**, the last save wins: the record as it was in that save replaces the others, and the earlier edits are lost without a warning. "At about the same time" means before their devices have picked up each other's change, which usually means within the few minutes between checks, and longer if someone is offline. Edits to different records never conflict.
+
+Planned improvements:
+
+- **Check before saving.** When you save, *RacerX* first checks the storage for a newer version of that record, saved since you started editing, and tells you instead of overwriting it.
+- **Start from the latest version.** Opening a record for editing first fetches its latest version, so you don't start from an out-of-date copy.
+- **Recover an earlier version.** A record's history, and a list of recently deleted records to bring back.
+- **Apps designed to avoid conflicts.** For example, an inventory app that records each stock movement as a new record instead of editing a quantity, so two people's changes never collide.
 
 **Your files in the cloud.** *RacerX* talks to Dropbox and OneDrive through their own services, so you don't need the Dropbox or OneDrive desktop programs. iCloud Drive and network shares are used as folders on your computer. *RacerX* keeps everything for one storage in its own top-level folder there, with one folder per app.
 
