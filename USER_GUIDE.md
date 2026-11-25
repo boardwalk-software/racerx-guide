@@ -49,7 +49,7 @@ What that means for you:
 
 *RacerX* lets you build and use your own database apps (a CRM, an issue tracker, a wedding planner, a team chat) without a server, at home, or at work, possibly without requiring support from an IT department. You design an app with tables, fields and links between tables, then you and the people you share it with add and edit records from a computer or a phone.
 
-**Your data stays in your own storage.** Each app lives either on this device only, or in cloud storage you already have: Dropbox, OneDrive, iCloud Drive or a network file share. There's no company server in between. *RacerX* on each device reads and writes each app's files in your storage directly, and keeps a fast local copy so your apps work offline.
+**Your data stays in your own storage.** Each app lives either on this device only, or in cloud storage you already have: Dropbox, OneDrive, iCloud Drive or a network file share. *RacerX* on each device reads and writes each app's files in your storage directly, and keeps a fast local copy so your apps work offline.
 
 **What's in *RacerX*:**
 
