@@ -63,7 +63,7 @@ The SQL Viewer and Sync Dashboard are tools that will help you, if you need it, 
 
 ## How it works
 
-Every app on this device has a local copy in a small database on the device. Everything you see is read from that copy, which is why *RacerX* is fast and works offline.
+Every app on your devices has a local copy in a small database on each device. Everything you see is read from that copy, which is why *RacerX* is fast and works offline.
 
 **When you change something:**
 
