@@ -38,7 +38,7 @@ const problems = [];
 // Codename: user-facing text never names it (it will change).
 // UK spellings: US spelling everywhere.
 const banned = [
-  [/\bracer\s?x\b/i, 'the codename (say "the app")'],
+  [/\bracer\s?x\b/i, 'the codename without italics (write *RacerX*, so it can be replaced later)'],
   [/\b(colour|behaviour|favourite|(organ|real|recogn|initial|synchron|custom|author|optim|minim|maxim|summar|priorit|categor|visual)is(e|ed|es|ing|ation|ations)\b|analys(e|ing)\b|cancell(ed|ing)|labell(ed|ing)|modell(ed|ing)|travell|centre|licence\b|catalogue|dialogue box)/i, 'UK spelling'],
 ];
 const off = fm[0].split('\n').length - 1;
@@ -46,7 +46,9 @@ let inFence = false;
 lines.forEach((l, i) => {
   if (/^\s*```/.test(l)) { inFence = !inFence; return; }
   // Code (fenced or `inline`) holds real names: file paths, the data folder.
-  const prose = inFence ? '' : l.replace(/`[^`]*`/g, '');
+  // *RacerX* in italics is the product's placeholder name (Rick, 2026-11-25:
+  // "put racerx in italics and then we'll replace it later on"); bare, it's a slip.
+  const prose = inFence ? '' : l.replace(/`[^`]*`/g, '').replace(/(?<![*_])([*_])RacerX\1(?![*_])/g, '');
   for (const [re, why] of banned) {
     if (re.test(prose)) problems.push(`line ${i + 1 + off}: ${why}: ${l.trim().slice(0, 100)}`);
   }

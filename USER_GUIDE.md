@@ -7,25 +7,25 @@ version: 19
 
 ## About this guide
 
-This guide explains how to use the app on a computer (Mac, Windows and Linux) and on an iPhone. It has three kinds of pages:
+This guide explains how to use project codename *RacerX* on a computer (Mac, Windows and Linux) and on an iPhone. It has three kinds of pages:
 
 - **Getting started and tutorials**: short, hands-on lessons. If you're new, start with **Tutorial 1**.
-- **Reference pages**: what each part of the app does, screen by screen.
-- **Architecture and Support**: how the app works inside, where it keeps things, and what to do when something goes wrong. These pages are more technical.
+- **Reference pages**: what each part of *RacerX* does, screen by screen.
+- **Architecture and Support**: how *RacerX* works inside, where it keeps things, and what to do when something goes wrong. These pages are more technical.
 
-**It keeps itself up to date.** The guide is a PDF that the app downloads and keeps current on its own. When a newer edition is published, the app fetches it the next time it starts, so you don't need an app update to get guide fixes. If you're offline, the last copy you downloaded keeps working.
+**It keeps itself up to date.** The guide is a PDF that *RacerX* downloads and keeps current on its own. When a newer edition is published, *RacerX* fetches it the next time it starts, so you don't need a *RacerX* update to get guide fixes. If you're offline, the last copy you downloaded keeps working.
 
 **Beta testers:** you're testing the tutorials as well as the software. Tell us where a step didn't match what you saw, what was unclear, and how long each tutorial really took.
 
 Send feedback to: [beta feedback address]
 
-## What the app does
+## What *RacerX* does
 
-The app lets you build and use your own database apps (a CRM, an issue tracker, a wedding planner, a team chat) without a server and without IT. You design an app with tables, fields and links between tables, then you and the people you share it with add and edit records from a computer or an iPhone.
+*RacerX* lets you build and use your own database apps (a CRM, an issue tracker, a wedding planner, a team chat) without a server and without IT. You design an app with tables, fields and links between tables, then you and the people you share it with add and edit records from a computer or an iPhone.
 
-**Your data stays in your own storage.** Each app lives either on this device only, or in cloud storage you already have: Dropbox, OneDrive, iCloud Drive or a network file share. There's no company server in between. The app on each device reads and writes the app's files in your storage directly, and keeps a fast local copy so it works offline.
+**Your data stays in your own storage.** Each app lives either on this device only, or in cloud storage you already have: Dropbox, OneDrive, iCloud Drive or a network file share. There's no company server in between. *RacerX* on each device reads and writes each app's files in your storage directly, and keeps a fast local copy so your apps work offline.
 
-**What's in the app:**
+**What's in *RacerX*:**
 
 - **Apps** you create from scratch, from an example, or from a spreadsheet or SQLite database, each with lists, record forms, lookups between tables and live reports.
 - **Sharing**: invite other people to an app as **Read-Write** or **Read-Only** members.
@@ -35,7 +35,7 @@ The app lets you build and use your own database apps (a CRM, an issue tracker, 
 
 ## How it works
 
-Every app on this device has a local copy in a small database on the device. Everything you see is read from that copy, which is why the app is fast and works offline.
+Every app on this device has a local copy in a small database on the device. Everything you see is read from that copy, which is why *RacerX* is fast and works offline.
 
 **When you change something:**
 
@@ -44,11 +44,11 @@ Every app on this device has a local copy in a small database on the device. Eve
 3. Other devices that use the app check the storage on a schedule, download new files and add them to their own copies.
 4. Their screens refresh on their own.
 
-**How often apps check for changes.** By default an app checks every 5 minutes while the app is in front (every 10 minutes for OneDrive), and also when you come back to the app from another one. While the app is in the background it doesn't check, unless the app's owner turned that on. Owners can change both in the Schema Editor (**⚙️ Settings → Check for changes**). You can always check right away with **Sync** in the Sync Dashboard.
+**How often apps check for changes.** By default an app checks every 5 minutes while *RacerX* is in front (every 10 minutes for OneDrive), and also when you come back to *RacerX* from another one. While *RacerX* is in the background it doesn't check, unless the app's owner turned that on. Owners can change both in the Schema Editor (**⚙️ Settings → Check for changes**). You can always check right away with **Sync** in the Sync Dashboard.
 
 **If two people change the same record**, the most recent save wins.
 
-**Your files in the cloud.** The app talks to Dropbox and OneDrive through their own services, so you don't need the Dropbox or OneDrive desktop programs. iCloud Drive and network shares are used as folders on your computer. The app keeps everything for one storage in its own top-level folder there, with one folder per app.
+**Your files in the cloud.** *RacerX* talks to Dropbox and OneDrive through their own services, so you don't need the Dropbox or OneDrive desktop programs. iCloud Drive and network shares are used as folders on your computer. *RacerX* keeps everything for one storage in its own top-level folder there, with one folder per app.
 
 ## System requirements
 
@@ -70,7 +70,7 @@ Every app on this device has a local copy in a small database on the device. Eve
 | iCloud Drive | Yes | Use apps made elsewhere; can't create them or do owner tasks | No (Apple doesn't make iCloud Drive for Linux) | Yes |
 | Network File Share (SMB) | Yes | Yes | Yes | No |
 
-A free Dropbox or OneDrive account is enough to get started. You can also use the app with no account at all: apps kept on this device only need no sign-in.
+A free Dropbox or OneDrive account is enough to get started. You can also use *RacerX* with no account at all: apps kept on this device only need no sign-in.
 
 # Getting Started
 
@@ -107,9 +107,9 @@ There's no separate account to create: your Dropbox or OneDrive account is your 
 
 1. Click the dimmed **Dropbox** or **OneDrive** icon at the bottom of the sidebar. (You're also offered **Sign In…** whenever you pick that storage in **Add App**.)
 2. Your web browser opens the provider's sign-in page. Sign in and click **Allow**.
-3. Go back to the app. The icon is no longer dimmed.
+3. Go back to *RacerX*. The icon is no longer dimmed.
 
-Your password goes only to Dropbox or Microsoft. The app keeps the sign-in it's given in your computer's secure storage (the macOS keychain or Windows Credential Manager), so it stays signed in after a restart.
+Your password goes only to Dropbox or Microsoft. *RacerX* keeps the sign-in it's given in your computer's secure storage (the macOS keychain or Windows Credential Manager), so it stays signed in after a restart.
 
 **To sign out:** click the provider's icon at the bottom of the sidebar, then **Sign out of Dropbox** (or OneDrive) and **Confirm**. Your data in the cloud isn't touched.
 
@@ -136,7 +136,7 @@ Click **＋ Add App** in the sidebar. It offers three choices:
 
 Then click **Deploy**. The dialog shows each step as it works, and the app appears in the sidebar.
 
-**Adding your apps from other devices:** tick where your apps live (**Dropbox**, **OneDrive**, **Network File Share**, **iCloud Drive**), then search. The app lists everything there that isn't on this device yet; click **Add** for each one you want. For a network share you're asked to choose the share's folder; on Windows you may be asked to choose your iCloud Drive folder.
+**Adding your apps from other devices:** tick where your apps live (**Dropbox**, **OneDrive**, **Network File Share**, **iCloud Drive**), then search. *RacerX* lists everything there that isn't on this device yet; click **Add** for each one you want. For a network share you're asked to choose the share's folder; on Windows you may be asked to choose your iCloud Drive folder.
 
 **Joining someone else's app:** choose where the owner shared it, and follow the steps shown. They're different for each storage; **Tutorial 4** walks through all of them.
 
@@ -154,9 +154,9 @@ When you create an app you choose its storage. You can't move an app to differen
 
 To share a cloud app later, open **Manage Apps**, choose **Sharing** from the app's **⋮** menu, and follow the steps there.
 
-## Using the app on your iPhone
+## Using *RacerX* on your iPhone
 
-The iPhone app opens the same apps as your computer, with the same records. It's designed for looking things up and making quick changes; designing apps and sharing them are done on a computer.
+*RacerX* on the iPhone opens the same apps as your computer, with the same records. It's designed for looking things up and making quick changes; designing apps and sharing them are done on a computer.
 
 **The menu (☰)** lists your apps, then the tools: **Add App**, **Manage Apps**, **Sync Dashboard**, **User Guide**, and a dark/light mode switch. Tap an app to open it.
 
@@ -186,7 +186,7 @@ Video: coming soon
 
 Time: about 15 minutes
 
-You'll need: the app on a Mac, Windows or Linux computer. No cloud account is needed.
+You'll need: *RacerX* on a Mac, Windows or Linux computer. No cloud account is needed.
 
 ### Part 1: Create the CRM
 
@@ -252,7 +252,7 @@ Video: coming soon
 
 Time: about 25 minutes
 
-You'll need: the app on a computer. No cloud account is needed.
+You'll need: *RacerX* on a computer. No cloud account is needed.
 
 ### Part 1: Create a blank app
 
@@ -331,7 +331,7 @@ Video: coming soon
 
 Time: about 15 minutes
 
-You'll need: the app on a computer, and a spreadsheet program (Numbers, Excel, LibreOffice or Google Sheets).
+You'll need: *RacerX* on a computer, and a spreadsheet program (Numbers, Excel, LibreOffice or Google Sheets).
 
 ### Part 1: Make a small spreadsheet
 
@@ -354,7 +354,7 @@ Save it as **members.csv** (or as **members.xlsx**; for an Excel file, only the 
 4. **3. Storage**: **Local (offline)**.
 5. Click **Deploy**. The dialog reports what it found, for example *Found 4 columns, 5 rows* and *Schema: 1 table, 4 fields (types inferred)*.
 
-The first row becomes the fields. The app guesses each field's type from its values (numbers, dates, text), so **Joined** becomes a date field.
+The first row becomes the fields. *RacerX* guesses each field's type from its values (numbers, dates, text), so **Joined** becomes a date field.
 
 **Check your result:** open the app: one table with your rows. Open a record: **Joined** shows as a date.
 
@@ -369,7 +369,7 @@ Importing into an app that already exists matches the file to a table:
 
 The easiest way to get a file in the right shape is to export first:
 
-1. Open **Manage Apps**, click the app's **⋮** and choose **⬅ Export Data to CSVs**. The app writes one CSV per table to a folder named after the app, in your **Downloads** folder, and shows where.
+1. Open **Manage Apps**, click the app's **⋮** and choose **⬅ Export Data to CSVs**. *RacerX* writes one CSV per table to a folder named after the app, in your **Downloads** folder, and shows where.
 2. Open the exported CSV, delete the existing rows, and add two new ones. Keep the heading row as it is. Save it with the same name.
 3. Back in **Manage Apps**, click the app's **⋮** → **➡ Import Data from CSVs**, and pick the file. You can pick several files at once, one per table.
 
@@ -413,7 +413,7 @@ You'll need: two people (or two of your own accounts on two computers), and a cl
    - **Dropbox** sends them an invitation email.
    - **OneDrive** also gives you a share link, with **✉ Email** and **Copy** buttons. Send them the link: they'll paste it to join.
 
-**iCloud Drive:** iCloud apps are shared from Finder or the Files app, not from inside this app. The Sharing panel shows the app's folder:
+**iCloud Drive:** iCloud apps are shared from Finder or the Files app, not from inside *RacerX*. The Sharing panel shows the app's folder:
 
 2. On a Mac, click **📂 Show in Finder**, then right-click the selected folder → **Share…**.
 3. Leave **Share a Link** and **People you choose can edit** as they are, choose **Messages** or **Mail**, and send it to their Apple account.
@@ -422,7 +422,7 @@ You'll need: two people (or two of your own accounts on two computers), and a cl
 
 ### Part 3 (member): Join the app
 
-The other person opens the app on their own computer, clicks **＋ Add App** → **Join someone else's app**, and chooses where it was shared:
+The other person opens *RacerX* on their own computer, clicks **＋ Add App** → **Join someone else's app**, and chooses where it was shared:
 
 - **Dropbox**: open the invitation email from Dropbox and click the button to open the shared folder (this adds it to their Dropbox). Then come back and click **Search**.
 - **OneDrive**: copy the link the owner sent, paste it into **Paste the link the owner sent you…**, and click **Find App**.
@@ -529,7 +529,7 @@ Time: about 20 minutes
 
 You'll need: an API key from one AI provider (Claude from Anthropic, OpenAI, or Gemini from Google), and an app you own, such as **My CRM** from Tutorial 1.
 
-**About keys and costs.** The AI features use your own key, so the provider bills you directly, under their terms and prices; this app doesn't charge for AI. New accounts often get free credits (Gemini has a free tier). Set a spending limit in your provider's account before you start.
+**About keys and costs.** The AI features use your own key, so the provider bills you directly, under their terms and prices; *RacerX* doesn't charge for AI. New accounts often get free credits (Gemini has a free tier). Set a spending limit in your provider's account before you start.
 
 ### Part 1: Add your key
 
@@ -593,7 +593,7 @@ You'll need: a cloud app (for example **Shared CRM** from Tutorial 4, or any app
 ### Part 2: Work offline
 
 1. On device A, turn off Wi-Fi (or unplug the network).
-2. Add another contact. It saves at once: the app works from the copy on the device.
+2. Add another contact. It saves at once: *RacerX* works from the copy on the device.
 3. Open the **Sync Dashboard**. The app's dot turns amber (waiting) when it next tries to sync, and the **Sync Log** says why.
 4. Turn the network back on. At the next check, or when you click **Sync**, the change uploads.
 
@@ -604,7 +604,7 @@ You'll need: a cloud app (for example **Shared CRM** from Tutorial 4, or any app
 ### Part 3: Read the Sync Dashboard
 
 1. Each row is an app, with its storage icon and a dot: green fine, amber waiting, red a problem. **Last checked**, **Next run** and **Interval FG/BG** show its schedule.
-2. Below, the **Notifications** tab lists messages the app has shown you; the **Sync Log** tab lists each sync and design change, newest first.
+2. Below, the **Notifications** tab lists messages *RacerX* has shown you; the **Sync Log** tab lists each sync and design change, newest first.
 3. Untick every app except one, using the boxes beside them. The Sync Log shows only that app's lines, plus lines that aren't about one app (signing in, searching for apps), which always show for context.
 4. Click **⏸ Pause** on an app's row. It stops checking on this device until you click **▶ Resume**; your changes wait on the device.
 
@@ -618,7 +618,7 @@ If records from another device seem to be missing:
 ### What you learned
 
 - How changes travel between devices, and how to sync right away.
-- That the app works offline and catches up later.
+- That *RacerX* works offline and catches up later.
 - Reading the Sync Dashboard, filtering the Sync Log, and pausing an app.
 - What to do when data seems to be missing.
 
@@ -736,7 +736,7 @@ A **Lookup** field links a record to a record in another table, chosen under **O
 
 To choose, click **Change…** and tick the linked table's fields to show, in order (use the arrows to reorder); **Done** closes it, **Use automatic** goes back to the default.
 
-**Chained lookups.** If the field shown is itself a lookup (a contact's deal, shown by the deal's company), the line shows the chain, for example **Show as: Company → Company Name (automatic)**, and the app shows the final name, not an id.
+**Chained lookups.** If the field shown is itself a lookup (a contact's deal, shown by the deal's company), the line shows the chain, for example **Show as: Company → Company Name (automatic)**, and *RacerX* shows the final name, not an id.
 
 On the **Record form** tab you can also show a field *from* the linked record, read-only (**+ Related field**: for example, a contact's company's industry). In a view, **+ Related column** does the same for a column.
 
@@ -941,7 +941,7 @@ One row per app, with its storage icon and a status dot (green: fine; amber: wai
 |---|---|
 | Last checked | When this device last looked for changes: records changed on other devices, and whether the owner renamed, deleted or redesigned the app. A problem shows in red underneath; point at it for the details. |
 | Next run | When the next automatic check is due. |
-| Interval FG/BG | How often it checks while the app is in front / in the background. |
+| Interval FG/BG | How often it checks while *RacerX* is in front / in the background. |
 | Actions | **Sync** checks now. **⏸ Pause** stops automatic checks on this device until you **▶ Resume**; changes you make wait on this device and nothing is lost. |
 
 **Sync All Now** (top right) checks every app at once. **● Issues detected** appears beside the title when any app has a problem.
@@ -1022,7 +1022,7 @@ Invited people show as **Pending** until they accept. Change someone's access wi
 
 **Allow read-write members to share, import, and export**, at the bottom, lets Read-Write members invite people and import and export data. Edit and delete remain owner-only.
 
-**iCloud Drive:** iCloud apps are shared using Finder or the Files app's own Share feature, not from inside this app. The panel shows the app's folder. On a Mac, click **📂 Show in Finder**, right-click the selected folder → **Share…**, leave **Share a Link** and **People you choose can edit** as they are, and send it with **Messages** or **Mail**. On an iPhone or iPad, in the Files app, touch and hold the folder → **Share**. They join with **Add App** → **Join someone else's app** → **iCloud Drive**.
+**iCloud Drive:** iCloud apps are shared using Finder or the Files app's own Share feature, not from inside *RacerX*. The panel shows the app's folder. On a Mac, click **📂 Show in Finder**, right-click the selected folder → **Share…**, leave **Share a Link** and **People you choose can edit** as they are, and send it with **Messages** or **Mail**. On an iPhone or iPad, in the Files app, touch and hold the folder → **Share**. They join with **Add App** → **Join someone else's app** → **iCloud Drive**.
 
 **Network File Share:** give the person's account access to the shared folder on the server (on a Mac, System Settings → General → Sharing → File Sharing; on Windows, the folder's Properties → Sharing → Advanced Sharing → Permissions). They join with **Add App** → **Join someone else's app** → **Network File Share**. Phones and tablets can't open network-share apps.
 
@@ -1037,7 +1037,7 @@ Invited people show as **Pending** until they accept. Change someone's access wi
 | Publish Baseline, Delete App | Yes | No | No |
 | Re-download, App info, Remove from Navigation | Yes (Delete instead of Remove) | Yes | Yes |
 
-**Owner-only actions are checked with the storage itself.** The app asks Dropbox, OneDrive or iCloud who owns the app, rather than trusting a file in the app's folder that a member could change. If it can't confirm you're the owner, it doesn't let the action happen. That's why Windows can't do owner tasks on iCloud apps: Windows can't ask iCloud who owns a folder.
+**Owner-only actions are checked with the storage itself.** *RacerX* asks Dropbox, OneDrive or iCloud who owns the app, rather than trusting a file in the app's folder that a member could change. If it can't confirm you're the owner, it doesn't let the action happen. That's why Windows can't do owner tasks on iCloud apps: Windows can't ask iCloud who owns a folder.
 
 **When an owner deletes an app,** members' devices remove it at their next check and show a notification (also kept in the Sync Dashboard's **Notifications**).
 
@@ -1053,7 +1053,7 @@ The AI features (the Schema Editor's **✨ AI** Assistant and the SQL Viewer's *
 
 **Get API key ↗** opens the provider's page. Paste the key and click **Save**. Keys are kept on this device, in its secure storage, and are sent only to that provider.
 
-**Costs** are between you and the provider, under their terms: this app doesn't charge for AI and never sees your billing. Anthropic gives new accounts trial credits, Gemini has a free tier, and OpenAI needs a card. Set a spending limit in your provider's account.
+**Costs** are between you and the provider, under their terms: *RacerX* doesn't charge for AI and never sees your billing. Anthropic gives new accounts trial credits, Gemini has a free tier, and OpenAI needs a card. Set a spending limit in your provider's account.
 
 # Architecture
 
@@ -1065,7 +1065,7 @@ Every desktop version has three layers: a thin native **shell**, a **Node.js bac
 
 | Platform | Shell | Web view | Node.js |
 |---|---|---|---|
-| macOS | Swift (`macos-shell/`) | WKWebView | Bundled in the app (`Contents/Resources/node`) |
+| macOS | Swift (`macos-shell/`) | WKWebView | Bundled in *RacerX* (`Contents/Resources/node`) |
 | Windows | C# WinForms (`windows-shell/`) | WebView2 (Edge) | Installed Node.js (dev build); the backend's output is logged to `%APPDATA%\racerx\node.log` |
 | Linux | Python, GTK 4 (`ubuntu-shell/racerx.py`); Flatpak packaging in `flatpak/` | WebKitGTK | System or Flatpak-bundled Node.js |
 
@@ -1082,7 +1082,7 @@ On macOS, a small Swift helper (`rx-icloud-sharing`) answers who owns an iCloud 
 
 **Layer 3: React UI** (`web-ui/`), built with Vite. It talks to the backend only over `fetch()` and the WebSocket, and has no direct disk or network access of its own.
 
-**The iPhone app** is a Flutter app (`lib/`, `packages/`) with the same data layout and sync model, reading the same cloud files.
+**The iPhone version** of *RacerX* is a Flutter app (`lib/`, `packages/`) with the same data layout and sync model, reading the same cloud files.
 
 ## Data architecture
 
@@ -1110,7 +1110,7 @@ The sync engine (`backend/src/sync/`) runs a few kinds of jobs per app, each on 
 
 **Supervisor.** A per-app supervisor checks the app's own metadata: whether the owner renamed it, redesigned it (a new schema revision) or deleted it (the folder's deletion marker), and members' details.
 
-**Timing.** Foreground interval: 5 minutes by default (10 for OneDrive), or what the owner set. Background: off by default. The engine also checks right away when the app comes to the front or the device wakes. **Sync**, **Sync All Now** and **Pause** in the Sync Dashboard drive these jobs by hand.
+**Timing.** Foreground interval: 5 minutes by default (10 for OneDrive), or what the owner set. Background: off by default. The engine also checks right away when *RacerX* comes to the front or the device wakes. **Sync**, **Sync All Now** and **Pause** in the Sync Dashboard drive these jobs by hand.
 
 ## Authentication and credentials
 
@@ -1118,7 +1118,7 @@ Dropbox and OneDrive use OAuth 2. Your password goes only to the provider.
 
 1. You choose to sign in; the backend starts the sign-in.
 2. Your default browser opens the provider's sign-in page (through the shell's link-opening bridge).
-3. After you approve, the provider redirects back to the app (a localhost address on desktop) with a one-time code.
+3. After you approve, the provider redirects back to *RacerX* (a localhost address on desktop) with a one-time code.
 4. The backend exchanges the code for an access token and a refresh token, and stores them.
 
 **Where tokens are kept** (`backend/src/sync/kv.js`):
@@ -1133,9 +1133,9 @@ The fallback file is created readable only by you. On Windows ARM64, keytar has 
 
 **Refreshing.** Access tokens expire after hours. Before each cloud call the backend checks the token and refreshes it when needed. An expired or revoked sign-in shows as signed out (the Owner tab's **Signed out**; on the phone, a red dot with **Sign in again**).
 
-**macOS keychain prompts.** After installing or updating, macOS may ask whether the app may use your login keychain. Click **Always Allow**. If you deny it, sign-in won't be remembered after a restart.
+**macOS keychain prompts.** After installing or updating, macOS may ask whether *RacerX* may use your login keychain. Click **Always Allow**. If you deny it, sign-in won't be remembered after a restart.
 
-**Signing out** removes the tokens for that provider. The local database stays until you reset the app.
+**Signing out** removes the tokens for that provider. The local database stays until you reset *RacerX*.
 
 ## Cloud storage layout
 
@@ -1160,7 +1160,7 @@ For Dropbox and OneDrive, everything lives under one top-level folder whose name
 
 Each app folder is named after the app plus a short id, so two apps with the same name don't collide. A deleted app leaves a small deletion marker in its folder, which members' devices act on. Members' display names come from the provider at runtime and from small "people" files members write; there's no member list file an owner maintains.
 
-**Not in storage:** the local database, preferences, sign-in tokens, the app itself.
+**Not in storage:** the local database, preferences, sign-in tokens, *RacerX* itself.
 
 ## Build system and native modules
 
@@ -1171,9 +1171,9 @@ Each desktop platform has its own build script. All three produce the same runti
 1. Checks that `better-sqlite3` loads with the bundled Node.js, so the native module's ABI matches the Node that runs it.
 2. Builds the React UI.
 3. Builds the Swift shell with Xcode.
-4. Copies the UI and the backend (server, sync, sharing, fileshare modules) into the app bundle.
+4. Copies the UI and the backend (server, sync, sharing, fileshare modules) into the *RacerX* app bundle.
 5. Builds the iCloud sharing helper.
-6. Launches the app.
+6. Launches *RacerX*.
 
 **Windows** (`windows-shell/build.ps1`): pulls the latest code, runs `setup.ps1` if anything is missing (Node.js, Python, .NET 8 SDK), reinstalls the backend's `node_modules` with the system Node.js first on `PATH` (see **Windows ARM64 notes**), builds the React UI and the C# shell, and launches the app.
 
@@ -1204,15 +1204,15 @@ Apps on this device only, on a network share or in iCloud Drive don't depend on 
 
 **Can I move an app to different storage?** Not yet. Create a new app in the new storage and import the data: export to CSVs, then import.
 
-**Where do I find my app's files in Dropbox or OneDrive?** On the provider's website, in the app's own top-level folder, one folder per app.
+**Where do I find my app's files in Dropbox or OneDrive?** On the provider's website, in *RacerX*'s own top-level folder, one folder per app.
 
-**Does the app work without the internet?** Yes. See **Working offline**.
+**Does *RacerX* work without the internet?** Yes. See **Working offline**.
 
 **Why can't I create an iCloud app on Windows?** Windows can't ask iCloud who owns a folder, so the owner couldn't share or delete it from Windows. Create it on a Mac, iPhone or iPad; Windows can then use it.
 
 ## Storage locations
 
-Where the app keeps things on each platform. You'll need these for resets, backups and diagnosis.
+Where *RacerX* keeps things on each platform. You'll need these for resets, backups and diagnosis.
 
 **macOS.** The shell looks for the database in these places, in order, and uses the first that exists:
 
@@ -1227,8 +1227,8 @@ The current development build uses the third.
 | What | Where |
 |---|---|
 | Database | One of the paths above |
-| Sign-in tokens | The keychain (search Keychain Access for the app's name), or `~/.racerx/kv.json` |
-| Web view storage (preferences) | Inside the app's container or Library folder |
+| Sign-in tokens | The keychain (search Keychain Access for *RacerX*), or `~/.racerx/kv.json` |
+| Web view storage (preferences) | Inside *RacerX*'s container or Library folder |
 | Backend log | Xcode's console, or Console.app; no log file |
 
 **Windows**
@@ -1248,16 +1248,16 @@ The current development build uses the third.
 | Database (Flatpak) | Inside `~/.var/app/com.gansler.RacerX/` |
 | Sign-in tokens | The keyring (libsecret), or the kv.json fallback |
 
-**Cloud storage:** in Dropbox and OneDrive, the app's top-level folder (reached through the provider's API; you don't need their desktop programs). In iCloud Drive or on a network share, the folder you chose.
+**Cloud storage:** in Dropbox and OneDrive, *RacerX*'s top-level folder (reached through the provider's API; you don't need their desktop programs). In iCloud Drive or on a network share, the folder you chose.
 
 ## Reset procedures: macOS
 
-Resets the app on a Mac to a first-launch state.
+Resets *RacerX* on a Mac to a first-launch state.
 
 **A full reset removes:** the local database (the copy of your data on this Mac), the sign-in tokens, and the web view's stored preferences. **It doesn't touch** anything in cloud storage.
 
-1. **Quit the app.**
-2. **Delete the app's data.** For a sandboxed build, delete the `Data/` folder inside its container, not the container itself (macOS protects a file there and the command fails):
+1. **Quit *RacerX*.**
+2. **Delete *RacerX*'s data.** For a sandboxed build, delete the `Data/` folder inside its container, not the container itself (macOS protects a file there and the command fails):
 
 ```bash
 rm -rf ~/Library/Containers/com.racerx.racerx/Data/
@@ -1266,21 +1266,21 @@ rm -rf ~/Library/Application\ Support/com.example.racerx/
 rm -rf ~/.racerx/
 ```
 
-3. **Remove the keychain entries:** open **Keychain Access** (Applications → Utilities), search for the app's name and delete its entries, or in Terminal:
+3. **Remove the keychain entries:** open **Keychain Access** (Applications → Utilities), search for *RacerX* and delete its entries, or in Terminal:
 
 ```bash
 security delete-generic-password -s "RacerX" 2>/dev/null; true
 ```
 
-4. **Open the app again.** Sign in again, and add your apps back with **Add App** → **Add my apps from my other devices**.
+4. **Open *RacerX* again.** Sign in again, and add your apps back with **Add App** → **Add my apps from my other devices**.
 
 The bundle id will change before the App Store release; this page will change with it.
 
 ## Reset procedures: Windows
 
-Resets the app on Windows to a first-launch state. Nothing in cloud storage is touched.
+Resets *RacerX* on Windows to a first-launch state. Nothing in cloud storage is touched.
 
-Quit the app, then run these in PowerShell. They remove, in order: the database, log and backend data; the sign-in tokens (file fallback); and the web view storage, which is next to the program, not in AppData (the dev build's path is shown).
+Quit *RacerX*, then run these in PowerShell. They remove, in order: the database, log and backend data; the sign-in tokens (file fallback); and the web view storage, which is next to the program, not in AppData (the dev build's path is shown).
 
 ```powershell
 Remove-Item -Recurse -Force "$env:APPDATA\racerx" -ErrorAction SilentlyContinue
@@ -1288,11 +1288,11 @@ Remove-Item -Recurse -Force "$env:USERPROFILE\.racerx" -ErrorAction SilentlyCont
 Remove-Item -Recurse -Force "windows-shell\bin\Debug\net8.0-windows\RacerX.exe.WebView2" -ErrorAction SilentlyContinue
 ```
 
-Run the last line from the repository folder. Also remove the app's entries in **Credential Manager** if keytar was used (x64).
+Run the last line from the repository folder. Also remove *RacerX*'s entries in **Credential Manager** if keytar was used (x64).
 
 **Why the web view folder matters:** preferences such as light or dark mode live in the web view's storage, which isn't in `%APPDATA%`. Delete both for a truly clean start.
 
-Then start the app again (`.\windows-shell\build.ps1` for the dev build) and sign in.
+Then start *RacerX* again (`.\windows-shell\build.ps1` for the dev build) and sign in.
 
 If it crashes at startup mentioning `better-sqlite3`, see **Windows ARM64 notes**.
 
@@ -1352,9 +1352,9 @@ SELECT * FROM sync_cursors;
 - `not a valid Win32 application` loading `better-sqlite3` or `keytar`: an ARM64/x64 mismatch; see **Windows ARM64 notes**.
 - `listen EADDRINUSE`: an earlier backend didn't exit and still holds port 7722; end `node.exe` in Task Manager.
 
-**Backend log on macOS:** the Xcode console when run from Xcode, or Console.app (search for the app's name). There's no log file.
+**Backend log on macOS:** the Xcode console when run from Xcode, or Console.app (search for *RacerX*). There's no log file.
 
-**Web Inspector:** in debug builds on macOS, Safari's **Develop** menu → the app connects the Web Inspector.
+**Web Inspector:** in debug builds on macOS, Safari's **Develop** menu → *RacerX* connects the Web Inspector.
 
 ## Records not syncing
 
@@ -1370,7 +1370,7 @@ If records added or changed on one device don't appear on another:
 
 **My apps show "Signed out".** You're signed out of that cloud on this device, or its sign-in expired. Click **Signed out** (or the dimmed Dropbox or OneDrive icon at the bottom of the sidebar) to sign in. Nothing is lost meanwhile; changes wait to upload. See **Frequently asked questions**.
 
-**The browser said I signed in, but the app didn't notice.** Go back to the app and wait a few seconds. If nothing changes, start the sign-in again. If it still fails, restart the app and try once more.
+**The browser said I signed in, but *RacerX* didn't notice.** Go back to *RacerX* and wait a few seconds. If nothing changes, start the sign-in again. If it still fails, restart *RacerX* and try once more.
 
 **macOS asks for my keychain password.** After installing or updating, click **Always Allow**. It shouldn't ask again.
 
@@ -1414,5 +1414,5 @@ FROM sharing_log ORDER BY ts DESC LIMIT 30;
 - **Very large apps:** after a big import to cloud storage, use **Publish Baseline** so new devices download one file instead of thousands.
 - **A slow list:** sorting or filtering by a column from a very large linked table can be slow; **Reset sort & filters** gets you back.
 - **Count a table's records** in the SQL Viewer: `SELECT COUNT(*) FROM contacts_APPID;` (Manage Apps' **Records** column shows it too).
-- **Checks use the network:** a slow connection makes syncs slow, not the app itself; lists and records always come from this device.
+- **Checks use the network:** a slow connection makes syncs slow, not *RacerX* itself; lists and records always come from this device.
 - **Reports** run every block each time they're shown; keep report queries simple, with an `ORDER BY` and a sensible `LIMIT`.
