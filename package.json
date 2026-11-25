@@ -1,0 +1,13 @@
+{
+  "name": "user-guide",
+  "private": true,
+  "description": "Builds the User Guide PDF from USER_GUIDE.md",
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.3",
+    "puppeteer": "25.16.0"
+  }
+}
