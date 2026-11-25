@@ -1,0 +1,42 @@
+# Builds the User Guide PDF on every push to main that changes it, and
+# publishes it as a release when USER_GUIDE.md's version is new. The app
+# downloads releases/latest/download/guide.json (and the PDF) at startup.
+name: Build User Guide
+
+on:
+  push:
+    branches: [main]
+    paths: [USER_GUIDE.md, build/**, package.json, package-lock.json, .github/workflows/build.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          CI: 'true'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: user-guide
+          path: dist/
+      - name: Publish a release for a new version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v=$(node -p "require('./dist/guide.json').version")
+          if gh release view "v$v" >/dev/null 2>&1; then
+            echo "Release v$v already exists: bump version in USER_GUIDE.md to publish. The PDF is in this run's artifacts."
+          else
+            gh release create "v$v" dist/User-Guide.pdf dist/guide.json \
+              --title "User Guide v$v" --notes "Built from ${GITHUB_SHA::7}." --latest
+          fi
