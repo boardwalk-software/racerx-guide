@@ -53,11 +53,13 @@ What that means for you:
 
 **What's in *RacerX*:**
 
-- **Apps** you create from scratch, from an example, or from a spreadsheet or SQLite database, each with lists, record forms, lookups between tables and live reports.
+- **Apps** you create from scratch, from bundled examples, or from a spreadsheet or SQLite database upload, each with lists, record forms, lookups between tables and live reports.
 - **Sharing**: invite other people to an app as **Read-Write** or **Read-Only** members.
 - **Schema Editor**: design an app's tables, fields, views and reports, with an optional **✨ AI** assistant.
 - **SQL Viewer**: look at the data directly with SQL, or describe what you want and let an AI write the query.
 - **Sync Dashboard**: see how each app is keeping in step with its storage, and what happened recently.
+
+The SQL Viewer and Sync Dashboard are tools that will help you, if you need it, to troubleshoot your app.
 
 ## How it works
 
