@@ -7,7 +7,7 @@ version: 19
 
 ## About this guide
 
-This guide explains how to use project codename *RacerX* on a computer (Mac, Windows and Linux) and on an iPhone. It has three kinds of pages:
+This guide explains how to use project codename *RacerX* on a computer (Mac, Windows and Linux) and on mobile (iPhone/iPad and Android). It has three kinds of pages:
 
 - **Getting started and tutorials**: short, hands-on lessons. If you're new, start with **Tutorial 1**.
 - **Reference pages**: what each part of *RacerX* does, screen by screen.
@@ -17,7 +17,31 @@ This guide explains how to use project codename *RacerX* on a computer (Mac, Win
 
 **Beta testers:** you're testing the tutorials as well as the software. Tell us where a step didn't match what you saw, what was unclear, and how long each tutorial really took.
 
-Send feedback to: [beta feedback address]
+## Caveat emptor
+
+*Caveat emptor* is Latin for "let the buyer beware."
+
+This user guide covers the *Beta-1* release, which is known to contain both defects and unfinished features. Screens will change, some features are missing, and you'll find bugs we haven't. We follow the philosophy that "if you're not embarrassed by your first release, then you waited too long to release it" (after Reid Hoffman, the founder of LinkedIn).
+
+In *Beta-1*:
+
+- The mobile app runs on iPhone. iPad and Android come later.
+- Some parts of this guide describe *RacerX* as it's meant to work, and you may find a step that doesn't match what you see. That's one of the things the beta is for.
+- Keep your own copy of any data you can't afford to lose.
+
+## Why *RacerX* is different
+
+Most business software lives in a data center. The application runs on the vendor's servers, your data sits in the vendor's database, and every computer and phone is only a window onto it. When those servers are slow or down, so is your work; when you stop paying, or the vendor closes, your data goes with them.
+
+*RacerX* turns that around. **The application server and the database server move onto your own devices.** Every computer and phone runs the whole application, with its own copy of each app's database, so it's fast and keeps working offline. All that's left in a data center is your data's files, in cloud storage you already have (Dropbox, OneDrive or iCloud Drive) or on a network share in your own office. That storage just holds the files and carries changes between devices. *RacerX* runs no servers of its own, so its data center footprint is small: ordinary file storage, which you control.
+
+What that means for you:
+
+- **Your data stays yours**, in storage you choose and already pay for, or on this device only.
+- **Fast, and works offline.** Every list, search and report runs on your own device. Changes sync when you're back online.
+- **Multi-user apps.** Share an app with other people as Read-Write or Read-Only members; everyone's devices stay in step through the shared storage.
+- **Every major device:** Mac, Windows and Linux computers, and mobile (iPhone/iPad and Android).
+- **No servers to set up or pay for**, and no IT department needed.
 
 ## What *RacerX* does
 
