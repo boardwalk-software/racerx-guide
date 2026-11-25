@@ -72,7 +72,7 @@ Every app on your devices has a local copy in a small database on each device. E
 3. Other devices that use the app check the storage on a schedule, download new files and add them to their own copies.
 4. Their screens refresh on their own.
 
-**How often apps check for changes.** By default an app checks every 5 minutes while *RacerX* is in front (every 10 minutes for OneDrive), and also when you come back to *RacerX* from another one. While *RacerX* is in the background it doesn't check, unless the app's owner turned that on. Owners can change both in the Schema Editor (**⚙️ Settings → Check for changes**). You can always check right away with **Sync** in the Sync Dashboard.
+**How often apps check for changes.** By default an app checks every 5 minutes while *RacerX* is in front (every 10 minutes for OneDrive), and also when you come back to *RacerX* from a different application on your device. While *RacerX* is in the background it doesn't check, unless the app's owner turned that on. Owners can change both in the Schema Editor (**⚙️ Settings → Check for changes**). You can always check right away with **Sync** in the Sync Dashboard.
 
 **If two people change the same record**, the most recent save wins.
 
